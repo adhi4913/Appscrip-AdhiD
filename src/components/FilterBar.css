@@ -1,0 +1,64 @@
+/* FilterBar.css */
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .filter-bar span {
+    font-weight: bold;
+  }
+  
+  .filter-bar button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .filter-bar .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter-bar .dropbtn {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .filter-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .filter-bar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .filter-bar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .filter-bar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  @media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (e.g., tablets) */
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px wide (e.g., mobile phones) */
+  }
+    

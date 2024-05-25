@@ -1,24 +1,43 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-
+import Sidebar from './components/Sidebar';
+import ProductGrid from './components/ProductGrid';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import FilterBar from './components/FilterBar';
+import InfoBar from './components/InfoBar';
 function App() {
+  const [areFiltersVisible, setAreFiltersVisible] = useState(true);
+
+  const handleToggleFilters = () => {
+    setAreFiltersVisible(!areFiltersVisible);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <InfoBar />
+      <FilterBar
+        itemCount={3425} // Update this value as needed
+        onToggleFilters={handleToggleFilters}
+        areFiltersVisible={areFiltersVisible}
+      />
+      <div className="layout">
+        {areFiltersVisible && <Sidebar />}
+        <div className="content">
+          <Routes>
+            <Route path="/shop" element={<ProductGrid />} />
+            <Route path="/kids" element={<div>Kids</div>} />
+            <Route path="/station" element={<div>Station</div>} />
+            <Route path="/about" element={<div>About</div>} />
+            <Route path="/contact" element={<div>Contact</div>} />
+            <Route path="/" element={<ProductGrid />} />
+          </Routes>
+        </div>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

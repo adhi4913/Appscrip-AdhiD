@@ -1,0 +1,16 @@
+
+.info-bar {
+    padding: 10px 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (e.g., tablets) */
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px wide (e.g., mobile phones) */
+  }
+  
