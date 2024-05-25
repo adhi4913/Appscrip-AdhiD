@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/appscrip-adhiD/static/css/main.6b707ddc.css",
+    "main.js": "/appscrip-adhiD/static/js/main.bbd0e3c6.js",
+    "static/js/453.86528490.chunk.js": "/appscrip-adhiD/static/js/453.86528490.chunk.js",
+    "index.html": "/appscrip-adhiD/index.html",
+    "main.6b707ddc.css.map": "/appscrip-adhiD/static/css/main.6b707ddc.css.map",
+    "main.bbd0e3c6.js.map": "/appscrip-adhiD/static/js/main.bbd0e3c6.js.map",
+    "453.86528490.chunk.js.map": "/appscrip-adhiD/static/js/453.86528490.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b707ddc.css",
+    "static/js/main.bbd0e3c6.js"
+  ]
+}
